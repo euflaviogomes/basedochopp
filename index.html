@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aluguel de choppeiras e barris de chopp claro e de vinho, com entrega, instalação e retirada no Rio de Janeiro e região. Solicite seu orçamento pelo WhatsApp.">
+    <meta name="theme-color" content="#09090b">
+    <meta name="robots" content="index, follow">
+    <title>Base do Chopp | Aluguel de Choppeira, Barris de 30L e 50L</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Playfair/Cinzel para o toque artesanal do chopp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        chopp: {
+                            gold: '#F59E0B',
+                            amber: '#D97706',
+                            darkGold: '#B45309',
+                            foam: '#FFFBEB',
+                            red: '#991B1B',
+                            darkRed: '#7F1D1D',
+                            black: '#111827',
+                            cardBg: '#0F172A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        brand: ['Cinzel', 'serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .dashed-border-red {
+            border: 2px dashed #991B1B;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #B45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        /* Custom scrollbar for chat */
+        .chat-scroll::-webkit-scrollbar {
+            width: 5px;
+        }
+        .chat-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .chat-scroll::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        /* Pulse animation for CTA badges */
+        @keyframes customPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+        .pulse-subtle {
+            animation: customPulse 2.5s infinite ease-in-out;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-chopp-black via-zinc-900 to-chopp-black text-amber-400 text-xs md:text-sm py-2 px-4 text-center font-medium flex justify-center items-center gap-2 border-b border-zinc-800">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+        <span>Atendimento Rápido para Rio de Janeiro e Região • Kit Completo: Choppeira + Barril + Cilindro + Entrega e Instalação</span>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <!-- SVG LOGO EMULATING BASE DO CHOPP ICON -->
+                    <div class="relative flex flex-col items-center justify-center p-1.5 bg-zinc-950 rounded-lg border border-zinc-800 shadow-md group-hover:border-amber-500 transition-colors">
+                        <!-- Taps illustration -->
+                        <svg class="w-10 h-10 text-amber-400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Tap handles -->
+                            <rect x="25" y="10" width="6" height="30" rx="3" fill="#D1D5DB"/>
+                            <rect x="47" y="5" width="6" height="35" rx="3" fill="#F59E0B"/>
+                            <rect x="69" y="10" width="6" height="30" rx="3" fill="#D1D5DB"/>
+                            <!-- Tap body connection -->
+                            <path d="M 20 40 L 80 40 L 75 55 L 25 55 Z" fill="#374151" stroke="#F59E0B" stroke-width="2"/>
+                            <circle cx="50" cy="48" r="4" fill="#991B1B"/>
+                            <!-- Spouts -->
+                            <path d="M 28 55 L 28 65 L 24 70" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M 50 55 L 50 68 L 46 73" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M 72 55 L 72 65 L 68 70" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                        <!-- Badge emblem -->
+                        <div class="mt-0.5 px-2 py-0.5 bg-zinc-900 border border-dashed border-red-700 rounded text-center">
+                            <span class="block font-brand font-black text-[10px] tracking-wider text-white">BASE DO CHOPP</span>
+                        </div>
+                    </div>
+
+                    <div class="hidden sm:flex flex-col">
+                        <span class="font-brand font-black text-xl text-zinc-950 tracking-tight leading-none group-hover:text-amber-600 transition-colors">BASE DO CHOPP</span>
+                        <span class="text-xs text-slate-500 font-medium tracking-wide mt-1 flex items-center gap-2">
+                            <span><i class="fa-brands fa-whatsapp text-emerald-600 mr-1"></i>(21) 97024-2909</span>
+                            <span>•</span>
+                            <span><i class="fa-brands fa-instagram text-pink-600 mr-1"></i>@basedochopp</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- NAV MENU DESKTOP -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+                    <a href="#servico" class="hover:text-amber-600 transition-colors">O Serviço</a>
+                    <a href="#barris" class="hover:text-amber-600 transition-colors">Barris & Sabores</a>
+                    <a href="#choppeiras" class="hover:text-amber-600 transition-colors">Choppeiras</a>
+                    <a href="#galeria" class="hover:text-amber-600 transition-colors">Galeria</a>
+                    <a href="#faq" class="hover:text-amber-600 transition-colors">Dúvidas</a>
+                </nav>
+
+                <!-- HEADER CTA -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openChat()" class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-4 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-emerald-600/20 hover:from-emerald-500 hover:to-emerald-400 hover:shadow-emerald-600/40 transition-all duration-200 transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Solicitar Orçamento</span>
+                    </button>
+
+                    <!-- MOBILE MENU TOGGLE -->
+                    <button onclick="toggleMobileMenu()" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#servico" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-amber-600 border-b border-slate-100">O Serviço</a>
+            <a href="#barris" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-amber-600 border-b border-slate-100">Barris & Sabores</a>
+            <a href="#choppeiras" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-amber-600 border-b border-slate-100">Choppeiras</a>
+            <a href="#galeria" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-amber-600 border-b border-slate-100">Galeria</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-amber-600 border-b border-slate-100">Dúvidas Frequentes</a>
+            
+            <div class="pt-2 flex flex-col gap-2 text-xs text-slate-600">
+                <p class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-emerald-600"></i> WhatsApp: <strong>(21) 97024-2909</strong></p>
+                <p class="flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-600"></i> Instagram: <strong>@basedochopp</strong></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-zinc-950 text-white overflow-hidden py-16 md:py-24 border-b border-amber-900/30">
+        <!-- Background Overlay Effects -->
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-red-900/30 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO LEFT TEXT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/80 border border-red-700/60 text-red-300 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-beer-mug-empty text-amber-400"></i>
+                        <span>Chopp Trincando de Gelado no seu Evento</span>
+                    </div>
+
+                    <h1 class="font-sans font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight text-white">
+                        Aluguel de Choppeira Completo com <span class="gold-gradient-text">Entrega e Instalação</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Tudo pronto para você servir chopp cremoso e perfeito! Nosso kit inclui <strong>Choppeira + Barril de Chopp (Claro ou Vinho) + Cilindro de CO2 + Instalação no local</strong>. Zero complicação.
+                    </p>
+
+                    <!-- KEY HIGHLIGHT BADGES -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                        <div class="bg-zinc-900/90 border border-zinc-800 p-3 rounded-xl text-center">
+                            <i class="fa-solid fa-truck-ramp-box text-amber-500 text-xl mb-1 block"></i>
+                            <span class="text-xs font-semibold text-slate-200 block">Entrega & Retirada</span>
+                        </div>
+                        <div class="bg-zinc-900/90 border border-zinc-800 p-3 rounded-xl text-center">
+                            <i class="fa-solid fa-plug-circle-check text-amber-500 text-xl mb-1 block"></i>
+                            <span class="text-xs font-semibold text-slate-200 block">Elétrica ou Gelo</span>
+                        </div>
+                        <div class="bg-zinc-900/90 border border-zinc-800 p-3 rounded-xl text-center">
+                            <i class="fa-solid fa-wine-bottle text-amber-500 text-xl mb-1 block"></i>
+                            <span class="text-xs font-semibold text-slate-200 block">30L e 50L</span>
+                        </div>
+                        <div class="bg-zinc-900/90 border border-zinc-800 p-3 rounded-xl text-center">
+                            <i class="fa-solid fa-handshake-angle text-amber-500 text-xl mb-1 block"></i>
+                            <span class="text-xs font-semibold text-slate-200 block">Comodato Disponível</span>
+                        </div>
+                    </div>
+
+                    <!-- HERO ACTION BUTTONS -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="openChat()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-400 hover:to-amber-600 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-xl shadow-amber-500/20 transition-all transform hover:-translate-y-1">
+                            <i class="fa-solid fa-calculator text-lg"></i>
+                            <span>Solicitar Orçamento Agora</span>
+                        </button>
+                        
+                        <a href="https://wa.me/5521970242909" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-base px-6 py-4 rounded-xl border border-zinc-800 transition-all">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+                            <span>(21) 97024-2909</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HERO RIGHT: LOGO CARD EMBLEM DISPLAY -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-gradient-to-b from-zinc-900 to-zinc-950 border-2 border-zinc-800 rounded-3xl p-6 shadow-2xl shadow-amber-500/10">
+                        <!-- Decorative top pins -->
+                        <div class="flex justify-between items-center mb-6 border-b border-zinc-800 pb-4">
+                            <span class="text-xs font-mono text-amber-400 uppercase tracking-widest flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> BASE DO CHOPP RIO
+                            </span>
+                            <span class="text-xs text-slate-400"><i class="fa-solid fa-shield-halved mr-1"></i>Qualidade Garantida</span>
+                        </div>
+
+                        <!-- Logotipo oficial enviado -->
+                        <div class="bg-white p-3 sm:p-4 rounded-2xl border border-zinc-700 text-center shadow-inner">
+                            <img src="data:image/webp;base64,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" alt="Logotipo oficial Base do Chopp, com telefone e Instagram" class="block w-full h-auto max-w-[420px] mx-auto" width="1024" height="651" fetchpriority="high">
+                        </div>
+
+                        <!-- Quick info tags -->
+                        <div class="mt-6 space-y-2 text-xs text-slate-400">
+                            <div class="flex items-center justify-between p-2 rounded bg-zinc-900/60">
+                                <span><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Chopp Claro Pilsen</span>
+                                <span class="font-semibold text-slate-200">30L e 50L</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 rounded bg-zinc-900/60">
+                                <span><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Chopp de Vinho Suave</span>
+                                <span class="font-semibold text-slate-200">30L e 50L</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 rounded bg-zinc-900/60">
+                                <span><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Opção em Consignação</span>
+                                <span class="font-semibold text-amber-400">Só paga se usar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: HOW IT WORKS (O SERVIÇO) -->
+    <section id="servico" class="py-16 md:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-bold text-xs uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Sem Dor de Cabeça</span>
+                <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3">Como Funciona a Locação da Base do Chopp?</h2>
+                <p class="text-slate-600 text-base mt-3">Cuidamos de tudo para você apenas abrir a torneira e curtir com seus convidados.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                
+                <!-- STEP 1 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-md">1</div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2"> Monte seu Pedido</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Escolha a quantidade de pessoas, os barris (Claro ou Vinho - 30L/50L) e o tipo de choppeira (Elétrica ou Gelo).</p>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-md">2</div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2"> Entrega & Instalação</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Nossa equipe leva a choppeira, o barril e o cilindro de CO2 até seu local e faz a instalação pronta para uso.</p>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-md">3</div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2"> Brinde à Vontade!</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Chopp trincando de gelado, com colarinho cremoso. Se pediu barril reserva em consignação, use se precisar.</p>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 font-black text-xl flex items-center justify-center mb-4 shadow-md">4</div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2"> Retirada Prática</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Após o evento, buscamos o equipamento no horário combinado. Você não precisa lavar ou desmontar nada.</p>
+                </div>
+
+            </div>
+
+            <!-- KIT INCLUDED BANNER -->
+            <div class="mt-12 bg-zinc-950 rounded-2xl p-6 md:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 border-2 border-red-900 shadow-xl">
+                <div class="space-y-2 text-center md:text-left">
+                    <div class="inline-block px-3 py-1 bg-red-900/60 border border-red-600 text-red-200 text-xs font-bold rounded-full">O QUE ESTÁ INCLUSO NO ALUGUEL</div>
+                    <h3 class="text-xl md:text-2xl font-bold">Choppeira + Barril + Cilindro de CO2 + Instalação Completa</h3>
+                    <p class="text-slate-400 text-sm">Leve tudo pronto com um único orçamento sem taxas escondidas.</p>
+                </div>
+                <button onclick="openChat()" class="whitespace-nowrap bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Simular Meu Orçamento</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: BARRIS & SABORES (PRODUCTS) -->
+    <section id="barris" class="py-16 md:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-bold text-xs uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-full border border-amber-200">Escolha o Sabor do Seu Evento</span>
+                <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3">Barris de Chopp: 30 Litros e 50 Litros</h2>
+                <p class="text-slate-600 text-base mt-3">Chopp com alto padrão de pureza, sempre fresco e mantido na temperatura ideal.</p>
+            </div>
+
+            <!-- PRODUCT CARDS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- PRODUCT 1: CHOPP CLARO -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <!-- Header / Tag -->
+                        <div class="relative bg-gradient-to-r from-amber-500 to-amber-600 p-6 text-slate-950">
+                            <span class="absolute top-4 right-4 bg-slate-950 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase">Mais Pedido</span>
+                            <div class="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-3xl mb-3">
+                                🍺
+                            </div>
+                            <h3 class="font-extrabold text-2xl">Chopp Claro (Pilsen)</h3>
+                            <p class="text-slate-900/80 font-medium text-sm mt-1">Leve, refrescante, dourado e com colarinho aveludado.</p>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                O verdadeiro chopp tradicional de alta qualidade. Baixa amargura, ultra refrescante e ideal para churrascos, festas ao ar livre e confraternizações.
+                            </p>
+
+                            <!-- Capacities -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
+                                    <span class="text-xs text-slate-500 font-semibold block uppercase">Barril de</span>
+                                    <span class="text-2xl font-extrabold text-slate-900">30 Litros</span>
+                                    <span class="text-xs text-amber-600 font-semibold block mt-1">Rende aprox. 100 copos (300ml)</span>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
+                                    <span class="text-xs text-slate-500 font-semibold block uppercase">Barril de</span>
+                                    <span class="text-2xl font-extrabold text-slate-900">50 Litros</span>
+                                    <span class="text-xs text-amber-600 font-semibold block mt-1">Rende aprox. 165 copos (300ml)</span>
+                                </div>
+                            </div>
+
+                            <!-- Bullet Points -->
+                            <ul class="space-y-2 text-sm text-slate-700">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Puro malte com filtragem rigorosa</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Servido sempre gelado no ponto certo</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Disponível em opção de barril extra (consignação)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 border-t border-slate-100">
+                        <button onclick="openChatWithFlavor('Chopp Claro')" class="w-full bg-slate-900 hover:bg-amber-600 text-white font-bold py-3.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Solicitar Orçamento Chopp Claro</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2: CHOPP DE VINHO -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <!-- Header / Tag -->
+                        <div class="relative bg-gradient-to-r from-red-900 to-purple-950 p-6 text-white">
+                            <span class="absolute top-4 right-4 bg-amber-400 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Sucesso Absoluto</span>
+                            <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-3xl mb-3">
+                                🍷
+                            </div>
+                            <h3 class="font-extrabold text-2xl">Chopp de Vinho</h3>
+                            <p class="text-red-200 font-medium text-sm mt-1">Sabor equilibrado, adocicado e extremamente marcante.</p>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6 space-y-6">
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                A combinação perfeita entre o frescor do chopp e o aroma frutado do vinho tinto de qualidade. Uma opção suave e sofisticada que faz enorme sucesso entre os convidados.
+                            </p>
+
+                            <!-- Capacities -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
+                                    <span class="text-xs text-slate-500 font-semibold block uppercase">Barril de</span>
+                                    <span class="text-2xl font-extrabold text-slate-900">30 Litros</span>
+                                    <span class="text-xs text-purple-700 font-semibold block mt-1">Rende aprox. 100 copos (300ml)</span>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center">
+                                    <span class="text-xs text-slate-500 font-semibold block uppercase">Barril de</span>
+                                    <span class="text-2xl font-extrabold text-slate-900">50 Litros</span>
+                                    <span class="text-xs text-purple-700 font-semibold block mt-1">Rende aprox. 165 copos (300ml)</span>
+                                </div>
+                            </div>
+
+                            <!-- Bullet Points -->
+                            <ul class="space-y-2 text-sm text-slate-700">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Toque suavemente adocicado e cremoso</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Excelente aceitação em todas as idades (adultos)</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Disponível em opção de barril extra (consignação)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 border-t border-slate-100">
+                        <button onclick="openChat()" class="w-full bg-slate-900 hover:bg-amber-600 text-white font-bold py-3.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Solicitar Orçamento Chopp de Vinho</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MODEL 2: CHOPPEIRA ELÉTRICA -->
+                <div id="choppeiras" class="scroll-mt-28 border-2 border-slate-200 hover:border-amber-500 rounded-3xl p-6 md:p-8 bg-slate-50 transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full uppercase">Alta Vazão & Conforto</span>
+                        <i class="fa-solid fa-bolt text-amber-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Choppeira Elétrica (127V / 220V)</h3>
+                    <p class="text-slate-600 text-sm mb-6">Refrigeração contínua e automatizada. Basta ligar na tomada e extrair o chopp sem se preocupar em repor gelo.</p>
+                    
+                    <div class="space-y-3 border-t border-slate-200 pt-4 text-sm text-slate-700">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-500">Voltagens Disponíveis:</span>
+                            <span class="font-semibold text-amber-600">Opções 127V (110V) e 220V</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-500">Requisito do Local:</span>
+                            <span class="font-semibold text-slate-900">Tomada próxima e estável</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-500">Performance:</span>
+                            <span class="font-semibold text-slate-900">Refrigeração elétrica contínua</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openChatWithEquip('Choppeira Elétrica')" class="mt-6 w-full bg-amber-600 hover:bg-amber-700 text-slate-950 font-bold py-3 rounded-xl transition-colors">
+                        Escolher Choppeira Elétrica
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: GALERIA DE FOTOS E EVENTOS -->
+    <section id="galeria" class="py-16 md:py-24 bg-zinc-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-400 font-bold text-xs uppercase tracking-widest bg-amber-950 px-3 py-1 rounded-full border border-amber-800">Galeria Base do Chopp</span>
+                <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-white mt-3">Presença Marcante nos Melhores Eventos</h2>
+                <p class="text-slate-400 text-base mt-3">Confira o acabamento impecável das nossas choppeiras e o padrão do nosso atendimento.</p>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 aspect-[9/16] max-h-[500px] mx-auto w-full shadow-lg">
+                    <video src="SaveClip.App_AQP10btsLWHnACTv0IgQxbzn3q5FV_96AXl-8QwUFqTTBB22CYMUHttrD1WRZmtqAA8DYup6vj-NvVMM5gpRDJ4iFrEy9L6axtcJ77k.mp4" class="w-full h-full object-cover" controls muted loop playsinline preload="metadata"></video>
+                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent p-4 pt-12 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-semibold">Choppeira Elétrica Inox</span>
+                        <h4 class="text-white font-bold text-sm">Chopp Trincando com Colarinho Cremoso</h4>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 aspect-[9/16] max-h-[500px] mx-auto w-full shadow-lg">
+                    <video src="SaveClip.App_AQPdMrcp0oMn4cjkzpCsQs8ojuKqeY1IzYhXFuWFwynRLtrHjl6zX1vQLXJrhfnCcwapl1tGJoc3jkEo8AumFAhpbScpvbwqy7M9YgI.mp4" class="w-full h-full object-cover" controls muted loop playsinline preload="metadata"></video>
+                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent p-4 pt-12 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-semibold">Confraternizações & Piscina</span>
+                        <h4 class="text-white font-bold text-sm">Atendimento Completo na Tijuca - RJ</h4>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 aspect-[9/16] max-h-[500px] mx-auto w-full shadow-lg">
+                    <video src="SaveClip.App_AQPJzI8lvCEI_aFGmbJuacxPqX03x03F3xx1CmQU9eA33Of07pPLtGVX7dh9g3YvqvfDFao-7OxFNlRu1gEjNUPei22Qy8rrtb1k220.mp4" class="w-full h-full object-cover" controls muted loop playsinline preload="metadata"></video>
+                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent p-4 pt-12 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-semibold">Múltiplas Choppeiras & Barris</span>
+                        <h4 class="text-white font-bold text-sm">Estrutura para Festas e Eventos</h4>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 aspect-[9/16] max-h-[500px] mx-auto w-full shadow-lg">
+                    <video src="SaveClip.App_AQNMmiIjOpQstwwRpLFuDg1BYyyXqLiC6C_GkJfpjoUtFChNUROLfKTvIF3GX6mLkbCcs_RDzMa1EXOlY0e0pxFYjre-lXyiJiO5LUE.mp4" class="w-full h-full object-cover" controls muted loop playsinline preload="metadata"></video>
+                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent p-4 pt-12 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-semibold">Churrascos e Aniversários</span>
+                        <h4 class="text-white font-bold text-sm">Instalação Rápida e Pronta para Servir</h4>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 aspect-[9/16] max-h-[500px] mx-auto w-full shadow-lg">
+                    <video src="SaveClip.App_AQOTwGxiMwKwKc-6XIm3mspAWZ-deZxX7dvdNq2ZDQupUMS1kldI4-c57nOxuSn4T-XlGpqLukAAeU7GpNYUejX28uzb55dDsm-E8Bs.mp4" class="w-full h-full object-cover" controls muted loop playsinline preload="metadata"></video>
+                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent p-4 pt-12 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-semibold">Rodas de Samba & Encontros</span>
+                        <h4 class="text-white font-bold text-sm">Chopp Gelado do Início ao Fim da Festa</h4>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 aspect-[9/16] max-h-[500px] mx-auto w-full shadow-lg">
+                    <video src="SaveClip.App_AQNx5-PATbEF9ebAehupOA-e0YXmRy6bAoW71ck7O632_0vsObMyldNs_729II1Lbb4xwGRq2NluImfBlKOfx9hsShRC8XA0pH7CzRs.mp4" class="w-full h-full object-cover" controls muted loop playsinline preload="metadata"></video>
+                    <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent p-4 pt-12 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-semibold">Eventos Noturnos & Áreas Externas</span>
+                        <h4 class="text-white font-bold text-sm">Choppeira a Gelo 100% Autônoma</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- INSTAGRAM CALL -->
+            <div class="mt-12 text-center">
+                <a href="https://instagram.com/basedochopp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                    <span>Siga @basedochopp no Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FAQ (DÚVIDAS FREQUENTES) -->
+    <section id="faq" class="py-16 md:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-amber-600 font-bold text-xs uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Tire Suas Dúvidas</span>
+                <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3">Perguntas Frequentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                
+                <details class="group bg-slate-50 p-5 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+                        <span>O que exatamente acompanha a locação?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-amber-600"></i></span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                        Nossos kits acompanham a choppeira (A Gelo ou Elétrica na voltagem correta), o barril de chopp contratado (30L ou 50L), o cilindro de gás CO2 com regulador de pressão, além de todo o serviço de entrega, instalação no local e retirada posterior.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-5 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+                        <span>Como funciona o barril em comodato/consignação?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-amber-600"></i></span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                        Enviamos um barril extra devidamente lacrado. Se durante o evento o seu chopp acabar e você precisar abrir o barril reserva, você paga apenas pelo barril utilizado. Se o lacre permanecer intacto ao final do evento, nós recolhemos o barril sem nenhum custo adicional para você.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-5 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+                        <span>Qual a diferença entre a Choppeira a Gelo e a Elétrica?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-amber-600"></i></span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                        A choppeira a gelo utiliza serpentina imersa em gelo (não precisa de tomada). É perfeita para locais abertos, sítios ou praias. A choppeira elétrica é ligada na tomada (127V ou 220V) e utiliza refrigeração própria. É necessário confirmar a voltagem disponível no local.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-5 rounded-2xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+                        <span>Quantos copos rende cada barril?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-amber-600"></i></span>
+                    </summary>
+                    <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                        O barril de 30 Litros rende aproximadamente 100 copos de 300ml. O barril de 50 Litros rende cerca de 165 a 170 copos de 300ml. Nosso atendente virtual ajuda a calcular a quantidade ideal para a sua quantidade de convidados!
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-zinc-950 text-slate-400 py-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-zinc-800">
+                
+                <!-- COL 1: LOGO & ABOUT -->
+                <div class="space-y-4 md:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-500 rounded-lg text-slate-950 font-black flex items-center justify-center font-brand">
+                            BC
+                        </div>
+                        <span class="font-brand font-black text-2xl text-white tracking-widest">BASE DO CHOPP</span>
+                    </div>
+                    <p class="text-sm text-slate-400 max-w-md">
+                        Especialistas em aluguel de choppeiras e barris de chopp claro e vinho para festas, churrascos, casamentos e eventos corporativos. Entrega, montagem e garantia de chopp gelado.
+                    </p>
+                </div>
+
+                <!-- COL 2: CONTATO -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Contato Rápido</h4>
+                    <p class="text-sm flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
+                        <a href="https://wa.me/5521970242909" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">(21) 97024-2909</a>
+                    </p>
+                    <p class="text-sm flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-pink-500 text-base"></i>
+                        <a href="https://instagram.com/basedochopp" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@basedochopp</a>
+                    </p>
+                </div>
+
+                <!-- COL 3: ATENDIMENTO -->
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider">Atendimento</h4>
+                    <p class="text-xs text-slate-400">Rio de Janeiro e Região Metropolitana</p>
+                    <button onclick="openChat()" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs px-4 py-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Iniciar Atendente Virtual</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; Base do Chopp. Todos os direitos reservados.</p>
+                <p>Aluguel de Choppeira + Barril + Cilindro de CO2 com Entrega e Instalação</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- INTERACTIVE VIRTUAL ASSISTANT (FLOATING WIDGET + MODAL / CHAT DRAWER) -->
+    <!-- ========================================================================= -->
+
+    <!-- FLOATING BOT TRIGGER BUTTON -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+        <!-- Callout bubble tooltip -->
+        <div class="hidden sm:flex items-center gap-2 bg-slate-950 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg border border-zinc-800 animate-bounce">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>Simular Orçamento Rápido</span>
+        </div>
+        
+        <button onclick="openChat()" class="relative group bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-105 active:scale-95 focus:outline-none">
+            <!-- Ping animation ring -->
+            <span class="absolute -inset-1 rounded-full bg-emerald-400 opacity-75 animate-ping pointer-events-none"></span>
+            
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+
+            <!-- Badge count -->
+            <span class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">
+                1
+            </span>
+        </button>
+    </div>
+
+    <!-- CHAT MODAL DRAWER OVERLAY -->
+    <div id="chatOverlay" role="dialog" aria-modal="true" aria-label="Atendente virtual Base do Chopp" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden transition-opacity duration-300 flex items-end sm:items-center justify-center p-0 sm:p-4">
+        
+        <!-- CHAT CONTAINER CONTAINER -->
+        <div id="chatContainer" class="bg-white w-full sm:max-w-lg h-[92vh] sm:h-[650px] rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-slate-200 transition-all transform translate-y-full sm:translate-y-0">
+            
+            <!-- CHAT HEADER -->
+            <div class="bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 p-4 text-white flex items-center justify-between border-b border-zinc-800 shrink-0">
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center font-black font-brand text-sm shadow">
+                            BC
+                        </div>
+                        <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 border-2 border-zinc-950"></span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-sm leading-tight text-white flex items-center gap-2">
+                            <span>Atendente Base do Chopp</span>
+                            <span class="bg-emerald-950 text-emerald-400 text-[10px] px-2 py-0.5 rounded-full border border-emerald-800">Online</span>
+                        </h3>
+                        <p class="text-[11px] text-slate-400">Simulador de Orçamento Instantâneo</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button onclick="resetChat()" title="Reiniciar conversa" class="text-slate-400 hover:text-amber-400 p-2 rounded-lg transition-colors text-xs">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                    <button onclick="closeChat()" class="text-slate-400 hover:text-white p-2 rounded-lg transition-colors text-lg">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CHAT PROGRESS BAR -->
+            <div class="bg-slate-100 h-1.5 w-full shrink-0">
+                <div id="chatProgressBar" class="bg-gradient-to-r from-amber-500 to-emerald-500 h-full w-[14%] transition-all duration-300"></div>
+            </div>
+
+            <!-- CHAT MESSAGES SCROLL AREA -->
+            <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-50 chat-scroll">
+                <!-- Messages dynamically inserted here via JavaScript -->
+            </div>
+
+            <!-- CHAT INPUT / QUICK OPTIONS AREA -->
+            <div id="chatInputArea" class="p-3 bg-white border-t border-slate-200 shrink-0">
+                <!-- Option buttons dynamically rendered -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile Menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            menu.classList.toggle('hidden');
+            const toggle = document.querySelector('button[aria-controls="mobileMenu"]');
+            const isOpen = !menu.classList.contains('hidden');
+            if(toggle) {
+                toggle.setAttribute('aria-expanded', String(isOpen));
+                toggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+            }
+            if(menu.classList.contains('hidden')) {
+                icon.className = "fa-solid fa-bars text-xl";
+            } else {
+                icon.className = "fa-solid fa-xmark text-xl";
+            }
+        }
+
+        // ==========================================
+        // VIRTUAL ASSISTANT CHAT BOT ENGINE (APRIMORADO)
+        // ==========================================
+        
+        let chatAnswers = {
+            tipoEvento: '',
+            qtdPessoas: '',
+            choppeiras: '',
+            geloQty: 0,
+            eletricaQty: 0,
+            voltagem: '',
+            tomadaProxima: '',
+            barris: '',
+            comodato: '',
+            eventoEndereco: '',
+            eventoData: '',
+            eventoHoraInicio: '',
+            eventoHoraFim: ''
+        };
+
+        let currentStep = 1;
+        let chatInitialized = false;
+        const totalSteps = 12;
+
+        // Counter states for tap machines
+        let currentGeloCount = 0;
+        let currentEletricaCount = 0;
+
+        function openChat() {
+            const overlay = document.getElementById('chatOverlay');
+            const container = document.getElementById('chatContainer');
+            overlay.classList.remove('hidden');
+            setTimeout(() => {
+                container.classList.remove('translate-y-full');
+            }, 10);
+            
+            if(!chatInitialized) {
+                chatInitialized = true;
+                initChat();
+            }
+        }
+
+        function closeChat() {
+            const overlay = document.getElementById('chatOverlay');
+            const container = document.getElementById('chatContainer');
+            container.classList.add('translate-y-full');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        function openChatWithFlavor(flavor) {
+            openChat();
+            if(!chatAnswers.barris) {
+                chatAnswers.barris = `1x Barril de ${flavor}`;
+            }
+        }
+
+        function openChatWithEquip(equip) {
+            openChat();
+            if(equip === 'Choppeira a Gelo') {
+                currentGeloCount = 1;
+                currentEletricaCount = 0;
+            } else if(equip === 'Choppeira Elétrica') {
+                currentEletricaCount = 1;
+                currentGeloCount = 0;
+            }
+            if(currentStep === 3) {
+                renderTapCounterUI();
+            }
+        }
+
+        function updateProgress() {
+            const pct = Math.min(100, Math.max(0, Math.round(((currentStep - 1) / (totalSteps - 1)) * 100)));
+            document.getElementById('chatProgressBar').style.width = `${pct}%`;
+        }
+
+        function resetChat() {
+            chatAnswers = {
+                tipoEvento: '',
+                qtdPessoas: '',
+                choppeiras: '',
+                geloQty: 0,
+                eletricaQty: 0,
+                voltagem: '',
+                tomadaProxima: '',
+                barris: '',
+                comodato: '',
+                eventoEndereco: '',
+                eventoData: '',
+                eventoHoraInicio: '',
+                eventoHoraFim: ''
+            };
+            currentGeloCount = 0;
+            currentEletricaCount = 0;
+            currentStep = 1;
+            chatInitialized = true;
+            document.getElementById('chatMessages').innerHTML = '';
+            initChat();
+        }
+
+        function escapeHTML(value) {
+            return String(value ?? '').replace(/[&<>"']/g, char => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            })[char]);
+        }
+
+        function addBotMessage(htmlContent) {
+            const container = document.getElementById('chatMessages');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = "flex items-start gap-2.5 max-w-[88%] animate-fade-in";
+            msgDiv.innerHTML = `
+                <div class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-black text-xs flex items-center justify-center shrink-0 font-brand">
+                    BC
+                </div>
+                <div class="bg-white p-3.5 rounded-2xl rounded-tl-none border border-slate-200 shadow-sm text-sm text-slate-800 space-y-2">
+                    ${htmlContent}
+                </div>
+            `;
+            container.appendChild(msgDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function addUserMessage(text) {
+            const container = document.getElementById('chatMessages');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = "flex items-end justify-end gap-2 max-w-[88%] ml-auto animate-fade-in";
+            const bubble = document.createElement('div');
+            bubble.className = "bg-zinc-900 text-white p-3 rounded-2xl rounded-br-none text-sm shadow-sm";
+            bubble.textContent = String(text ?? '');
+            msgDiv.appendChild(bubble);
+            container.appendChild(msgDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function initChat() {
+            updateProgress();
+            addBotMessage(`
+                <p class="font-bold text-slate-900">Olá! Seja bem-vindo à Base do Chopp! 🍺</p>
+                <p class="text-xs text-slate-600">Vou te ajudar a montar o orçamento perfeito para seu evento em menos de 1 minuto. Nosso kit inclui Choppeira + Barril + Cilindro de CO2 com entrega e instalação inclusas!</p>
+            `);
+            setTimeout(() => {
+                askQuestion(1);
+            }, 400);
+        }
+
+        function askQuestion(step) {
+            currentStep = step;
+            updateProgress();
+            const inputArea = document.getElementById('chatInputArea');
+            inputArea.innerHTML = '';
+
+            switch(step) {
+                case 1:
+                    addBotMessage(`<p class="font-semibold text-slate-900">1. Qual é o tipo de evento?</p>`);
+                    renderOptions([
+                        "Churrasco / Festa em casa",
+                        "Aniversário",
+                        "Casamento / Bodas",
+                        "Evento Corporativo",
+                        "Sítio / Área Aberta"
+                    ], true);
+                    break;
+
+                case 2:
+                    addBotMessage(`<p class="font-semibold text-slate-900">2. Qual a quantidade estimada de pessoas no evento?</p>`);
+                    renderOptions([
+                        "Até 30 pessoas (ex: ~1 barril 30L)",
+                        "30 a 60 pessoas (ex: ~1 barril 50L)",
+                        "60 a 100 pessoas (ex: ~2 barris)",
+                        "Mais de 100 pessoas"
+                    ], true);
+                    break;
+
+                case 3:
+                    addBotMessage(`
+                        <p class="font-semibold text-slate-900">3. Selecione a quantidade de choppeiras que deseja:</p>
+                        <p class="text-xs text-slate-500">Escolha os modelos e quantidades (+ / -). Você pode pedir só a gelo, só elétrica ou misto.</p>
+                    `);
+                    renderTapCounterUI();
+                    break;
+
+                case 4:
+                    // Only asked if Elétrica >= 1
+                    if(chatAnswers.eletricaQty > 0) {
+                        const hasGelo = chatAnswers.geloQty > 0;
+                        addBotMessage(`
+                            <p class="font-semibold text-slate-900">4. Qual é a voltagem da energia no local para a(s) choppeira(s) elétrica(s)?</p>
+                            ${hasGelo ? '<p class="text-xs text-amber-700">(Referente à choppeira elétrica selecionada)</p>' : ''}
+                        `);
+                        renderOptions([
+                            "110v / 127v",
+                            "220v",
+                            "Preciso de tomadas em voltagens mistas (110v e 220v)"
+                        ]);
+                    } else {
+                        // Skip if Gelo only
+                        chatAnswers.voltagem = "Não se aplica (Choppeira a gelo)";
+                        askQuestion(5);
+                    }
+                    break;
+
+                case 5:
+                    // Only asked if Elétrica >= 1
+                    if(chatAnswers.eletricaQty > 0) {
+                        addBotMessage(`<p class="font-semibold text-slate-900">5. Tem tomada próxima do local de onde ficará a choppeira elétrica?</p>`);
+                        renderOptions([
+                            "Sim, tomada próxima disponível",
+                            "Não tem tomada perto (precisarei de extensão/adequação)"
+                        ]);
+                    } else {
+                        // Skip if Gelo only
+                        chatAnswers.tomadaProxima = "Não se aplica (Choppeira a gelo)";
+                        askQuestion(6);
+                    }
+                    break;
+
+                case 6:
+                    addBotMessage(`
+                        <p class="font-semibold text-slate-900">6. Vai querer quantos barris e de quais sabores?</p>
+                        <p class="text-xs text-slate-500">Temos Chopp Claro (Pilsen) e Chopp de Vinho nos tamanhos 30L e 50L.</p>
+                    `);
+                    renderOptions([
+                        "1 Barril 30L Chopp Claro",
+                        "1 Barril 50L Chopp Claro",
+                        "1 Barril 30L Chopp de Vinho",
+                        "1 Barril 50L Chopp de Vinho",
+                        "2 Barris (1 Claro + 1 Vinho)",
+                        "Outra quantidade / Personalizado"
+                    ], true);
+                    break;
+
+                case 7:
+                    addBotMessage(`
+                        <p class="font-semibold text-slate-900">7. Quer mais algum barril extra em comodato/consignação?</p>
+                        <p class="text-xs text-amber-700 bg-amber-50 p-2 rounded border border-amber-200">💡 <em>Você deixa o barril reserva lacrado na festa e só paga se precisar abrir!</em></p>
+                    `);
+                    renderOptions([
+                        "Sim! Quero 1 barril 30L extra em consignação",
+                        "Sim! Quero 1 barril 50L extra em consignação",
+                        "Não preciso de barril em consignação",
+                        "Quero tirar dúvidas sobre o comodato"
+                    ], true);
+                    break;
+
+                case 8:
+                    addBotMessage(`<p class="font-semibold text-slate-900">8. Qual é o endereço completo onde será realizado o evento?</p><p class="text-xs text-slate-500">Informe rua, número, bairro, cidade e, se possível, um ponto de referência.</p>`);
+                    renderEventField('eventoEndereco', 'text', 'Ex.: Rua, número, bairro e cidade', 'Continuar');
+                    break;
+
+                case 9:
+                    addBotMessage(`<p class="font-semibold text-slate-900">9. Em qual data será realizado o evento?</p>`);
+                    renderEventField('eventoData', 'date', '', 'Continuar');
+                    break;
+
+                case 10:
+                    addBotMessage(`<p class="font-semibold text-slate-900">10. Qual será o horário de início do evento?</p>`);
+                    renderEventField('eventoHoraInicio', 'time', '', 'Continuar');
+                    break;
+
+                case 11:
+                    addBotMessage(`<p class="font-semibold text-slate-900">11. Qual será o horário de término do evento?</p>`);
+                    renderEventField('eventoHoraFim', 'time', '', 'Finalizar');
+                    break;
+
+                case 12:
+                    showSummary();
+                    break;
+            }
+        }
+
+        // Tap Counter UI Component (+ / -)
+        function renderTapCounterUI() {
+            const inputArea = document.getElementById('chatInputArea');
+            const totalSelected = currentGeloCount + currentEletricaCount;
+            const canConfirm = totalSelected > 0;
+
+            inputArea.innerHTML = `
+                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 space-y-3">
+                    
+                    <!-- ITEM: CHOPPEIRA A GELO -->
+                    <div class="flex items-center justify-between bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+                        <div>
+                            <span class="font-bold text-slate-900 text-xs sm:text-sm block">Choppeira a Gelo</span>
+                            <span class="text-[11px] text-sky-600 font-medium">100% Autônoma • Sem tomada</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="updateTapCount('gelo', -1)" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold flex items-center justify-center transition-colors text-base">
+                                -
+                            </button>
+                            <span class="w-6 text-center font-extrabold text-slate-900 text-base">${currentGeloCount}</span>
+                            <button onclick="updateTapCount('gelo', 1)" class="w-8 h-8 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold flex items-center justify-center transition-colors text-base">
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ITEM: CHOPPEIRA ELÉTRICA -->
+                    <div class="flex items-center justify-between bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+                        <div>
+                            <span class="font-bold text-slate-900 text-xs sm:text-sm block">Choppeira Elétrica</span>
+                            <span class="text-[11px] text-amber-600 font-medium">127V ou 220V • Gelo constante</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="updateTapCount('eletrica', -1)" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold flex items-center justify-center transition-colors text-base">
+                                -
+                            </button>
+                            <span class="w-6 text-center font-extrabold text-slate-900 text-base">${currentEletricaCount}</span>
+                            <button onclick="updateTapCount('eletrica', 1)" class="w-8 h-8 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold flex items-center justify-center transition-colors text-base">
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CONFIRM BUTTON -->
+                    <button onclick="confirmTapSelection()" ${!canConfirm ? 'disabled' : ''} class="w-full ${canConfirm ? 'bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-md' : 'bg-slate-200 text-slate-400 cursor-not-allowed'} font-extrabold text-xs sm:text-sm py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-check"></i>
+                        <span>${canConfirm ? `Confirmar (${totalSelected} choppeira${totalSelected > 1 ? 's' : ''})` : 'Selecione pelo menos 1 choppeira'}</span>
+                    </button>
+                </div>
+            `;
+        }
+
+        // Campos específicos dos dados de localização e horário do evento.
+        function renderEventField(fieldName, inputType, placeholder, buttonLabel) {
+            const inputArea = document.getElementById('chatInputArea');
+            inputArea.innerHTML = `
+                <form onsubmit="submitEventField(event, '${fieldName}')" class="space-y-2">
+                    <input
+                        type="${inputType}"
+                        id="${fieldName}Input"
+                        ${inputType === 'text' ? 'maxlength="250"' : ''}
+                        placeholder="${placeholder}"
+                        required
+                        class="w-full text-sm bg-slate-50 border border-slate-300 rounded-xl px-3 py-3 focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-100"
+                    >
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-sm py-3 px-4 rounded-xl transition-colors">
+                        ${buttonLabel} <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </form>
+            `;
+        }
+
+        function submitEventField(event, fieldName) {
+            event.preventDefault();
+            const input = document.getElementById(`${fieldName}Input`);
+            if(!input || !input.value.trim()) {
+                input?.focus();
+                return;
+            }
+            chatAnswers[fieldName] = input.value.trim();
+            addUserMessage(input.value.trim());
+            setTimeout(() => askQuestion(currentStep + 1), 300);
+        }
+
+        function formatEventDate(dateValue) {
+            if(!dateValue) return '';
+            const [year, month, day] = dateValue.split('-');
+            return `${day}/${month}/${year}`;
+        }
+
+        function updateTapCount(type, delta) {
+            if(type === 'gelo') {
+                currentGeloCount = Math.max(0, currentGeloCount + delta);
+            } else if(type === 'eletrica') {
+                currentEletricaCount = Math.max(0, currentEletricaCount + delta);
+            }
+            renderTapCounterUI();
+        }
+
+        function confirmTapSelection() {
+            if(currentGeloCount === 0 && currentEletricaCount === 0) return;
+
+            chatAnswers.geloQty = currentGeloCount;
+            chatAnswers.eletricaQty = currentEletricaCount;
+
+            let tapSummaryParts = [];
+            if(currentGeloCount > 0) tapSummaryParts.push(`${currentGeloCount}x Choppeira(s) a Gelo`);
+            if(currentEletricaCount > 0) tapSummaryParts.push(`${currentEletricaCount}x Choppeira(s) Elétrica(s)`);
+
+            chatAnswers.choppeiras = tapSummaryParts.join(" + ");
+            addUserMessage(`Choppeiras selecionadas: ${escapeHTML(chatAnswers.choppeiras)}`);
+
+            // Conditional branching according to rules:
+            // Case A: Only Ice -> Skip voltage and electrical socket questions
+            if(currentEletricaCount === 0 && currentGeloCount > 0) {
+                chatAnswers.voltagem = "Não se aplica (Choppeira a gelo)";
+                chatAnswers.tomadaProxima = "Não se aplica (Choppeira a gelo)";
+                setTimeout(() => {
+                    askQuestion(6); // Jump straight to Barris
+                }, 300);
+            } else {
+                // Case B & C: Has Electrical -> Ask electrical questions
+                setTimeout(() => {
+                    askQuestion(4);
+                }, 300);
+            }
+        }
+
+        function renderOptions(optionsArray, allowCustomInput = false) {
+            const inputArea = document.getElementById('chatInputArea');
+            
+            let buttonsHtml = `<div class="grid grid-cols-1 gap-2 mb-2">`;
+            optionsArray.forEach(opt => {
+                const safeOpt = opt.replace(/'/g, "\\'");
+                buttonsHtml += `
+                    <button onclick="handleOptionSelect('${safeOpt}')" class="text-left w-full bg-slate-100 hover:bg-amber-500 hover:text-slate-950 font-medium text-xs sm:text-sm py-2.5 px-3 rounded-xl border border-slate-200 transition-all">
+                        <i class="fa-solid fa-angle-right text-amber-600 mr-1.5"></i> ${opt}
+                    </button>
+                `;
+            });
+            buttonsHtml += `</div>`;
+
+            if(allowCustomInput) {
+                buttonsHtml += `
+                    <div class="flex items-center gap-2 mt-2">
+                        <input type="text" id="customChatInput" placeholder="Ou digite sua resposta..." class="flex-1 text-xs sm:text-sm bg-slate-50 border border-slate-300 rounded-xl px-3 py-2.5 focus:outline-none focus:border-amber-500">
+                        <button onclick="handleCustomInput()" class="bg-amber-500 hover:bg-amber-600 text-slate-950 px-4 py-2.5 rounded-xl font-bold text-xs shrink-0">
+                            Enviar
+                        </button>
+                    </div>
+                `;
+            }
+
+            inputArea.innerHTML = buttonsHtml;
+        }
+
+        function handleOptionSelect(value) {
+            recordAnswer(currentStep, value);
+        }
+
+        function handleCustomInput() {
+            const input = document.getElementById('customChatInput');
+            if(input && input.value.trim() !== '') {
+                const val = input.value.trim();
+                recordAnswer(currentStep, val);
+            }
+        }
+
+        function recordAnswer(step, answerText) {
+            addUserMessage(answerText);
+
+            switch(step) {
+                case 1: chatAnswers.tipoEvento = answerText; break;
+                case 2: chatAnswers.qtdPessoas = answerText; break;
+                case 4: chatAnswers.voltagem = answerText; break;
+                case 5: chatAnswers.tomadaProxima = answerText; break;
+                case 6: chatAnswers.barris = answerText; break;
+                case 7: chatAnswers.comodato = answerText; break;
+            }
+
+            setTimeout(() => {
+                askQuestion(step + 1);
+            }, 300);
+        }
+
+        function showSummary() {
+            updateProgress();
+            const inputArea = document.getElementById('chatInputArea');
+            inputArea.innerHTML = '';
+
+            const isGeloOnly = chatAnswers.eletricaQty === 0;
+
+            const summaryHtml = `
+                <div class="space-y-2">
+                    <p class="font-extrabold text-emerald-700 flex items-center gap-2 text-base">
+                        <i class="fa-solid fa-circle-check text-emerald-600"></i> Orçamento Prontinho!
+                    </p>
+                    <p class="text-xs text-slate-600">Confira o resumo do seu pedido antes de enviar no WhatsApp:</p>
+                    
+                    <div class="bg-zinc-950 text-slate-200 p-3.5 rounded-xl text-xs space-y-1.5 font-mono border border-zinc-800">
+                        <div><strong class="text-amber-400">Tipo de Evento:</strong> ${escapeHTML(chatAnswers.tipoEvento)}</div>
+                        <div><strong class="text-amber-400">Pessoas:</strong> ${escapeHTML(chatAnswers.qtdPessoas)}</div>
+                        <div><strong class="text-amber-400">Choppeiras:</strong> ${escapeHTML(chatAnswers.choppeiras)}</div>
+                        ${!isGeloOnly ? `
+                            <div><strong class="text-amber-400">Energia do Local:</strong> ${escapeHTML(chatAnswers.voltagem)}</div>
+                            <div><strong class="text-amber-400">Tomada Próxima:</strong> ${escapeHTML(chatAnswers.tomadaProxima)}</div>
+                        ` : ''}
+                        <div><strong class="text-amber-400">Barris:</strong> ${escapeHTML(chatAnswers.barris)}</div>
+                        <div><strong class="text-amber-400">Consignação Extra:</strong> ${escapeHTML(chatAnswers.comodato)}</div>
+                        <div class="border-t border-zinc-700 pt-2 mt-2"><strong class="text-amber-400">Endereço do Evento:</strong> ${escapeHTML(chatAnswers.eventoEndereco)}</div>
+                        <div><strong class="text-amber-400">Data do Evento:</strong> ${escapeHTML(formatEventDate(chatAnswers.eventoData))}</div>
+                        <div><strong class="text-amber-400">Horário de Início:</strong> ${escapeHTML(chatAnswers.eventoHoraInicio)}</div>
+                        <div><strong class="text-amber-400">Horário de Término:</strong> ${escapeHTML(chatAnswers.eventoHoraFim)}</div>
+                    </div>
+                </div>
+            `;
+            addBotMessage(summaryHtml);
+
+            // Construct formatted WhatsApp message URL
+            let electricalBlock = '';
+            if(!isGeloOnly) {
+                electricalBlock = 
+`⚡ *Energia do Local:* ${escapeHTML(chatAnswers.voltagem)}
+🔌 *Tomada Próxima:* ${escapeHTML(chatAnswers.tomadaProxima)}\n`;
+            }
+
+            const rawMessage = 
+`🍻 *SOLICITAÇÃO DE ORÇAMENTO - BASE DO CHOPP* 🍻
+
+Olá! Gostaria de consultar a disponibilidade e valor para locação de Choppeira:
+
+📌 *Tipo de Evento:* ${escapeHTML(chatAnswers.tipoEvento)}
+👥 *Quantidade de Pessoas:* ${escapeHTML(chatAnswers.qtdPessoas)}
+🍺 *Choppeiras:* ${escapeHTML(chatAnswers.choppeiras)}
+${electricalBlock}📦 *Barris Desejados:* ${escapeHTML(chatAnswers.barris)}
+🔄 *Barril Extra em Consignação:* ${escapeHTML(chatAnswers.comodato)}
+
+📍 *Endereço do Evento:* ${escapeHTML(chatAnswers.eventoEndereco)}
+📅 *Data do Evento:* ${escapeHTML(formatEventDate(chatAnswers.eventoData))}
+🕒 *Horário de Início:* ${escapeHTML(chatAnswers.eventoHoraInicio)}
+🕘 *Horário de Término:* ${escapeHTML(chatAnswers.eventoHoraFim)}
+
+Aguardamos o retorno para consultar a disponibilidade e confirmar o orçamento!`;
+
+            const encodedMessage = encodeURIComponent(rawMessage);
+            const whatsappUrl = `https://wa.me/5521970242909?text=${encodedMessage}`;
+
+            inputArea.innerHTML = `
+                <div class="space-y-2">
+                    <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" onclick="closeChat()" class="w-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 hover:from-emerald-500 hover:to-emerald-400 text-white font-black text-sm py-3.5 px-4 rounded-xl shadow-xl flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02]">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>ENVIAR RESPOSTAS NO WHATSAPP</span>
+                    </a>
+                    
+                    <button onclick="resetChat()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs py-2 rounded-lg font-semibold transition-colors">
+                        <i class="fa-solid fa-rotate-right mr-1"></i> Reiniciar e Refazer Perguntas
+                    </button>
+                </div>
+            `;
+        }
+        // Fecha o atendimento com Esc e ao clicar fora do painel.
+        document.addEventListener('keydown', event => {
+            if(event.key === 'Escape') {
+                closeChat();
+                const menu = document.getElementById('mobileMenu');
+                if(menu && !menu.classList.contains('hidden')) toggleMobileMenu();
+            }
+        });
+
+        document.getElementById('chatOverlay').addEventListener('click', event => {
+            if(event.target.id === 'chatOverlay') closeChat();
+        });
+    </script>
+</body>
+</html>
